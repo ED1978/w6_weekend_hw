@@ -4,6 +4,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     event.preventDefault();
 
+    const deleteAllButton = document.querySelector('#delete-all');
+    deleteAllButton.addEventListener('click', handleDeleteAllClick);
+
     const newTune = document.createElement('ul');
 
     const newTrackTitle = document.createElement('li');
@@ -31,5 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const formInput = document.querySelector('#new-tune-form');
   formInput.addEventListener('submit', handleFormInput);
+
+  const handleDeleteAllClick = function(event){
+    const chart = document.querySelector('#chart');
+    chart.innerHTML = '';
+  }
 
 })
