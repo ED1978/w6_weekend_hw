@@ -10,12 +10,36 @@
     <h1 id="heading">Top Tunes Chart</h1>
     <form id="new-tune-form">
       <div id="form-container">
+
         <div class="form-item">
           <label for="track-title" class ="primary">Track Title:</label>
           <input type="text" id="track-title" required>
         </div>
 
+        <div class="form-item">
+          <label for="artist" class ="primary">Artist:</label>
+          <input type="text" id="artist" required>
+        </div>
+
+        <div class="form-item">
+          <label for="year" class ="primary">Year:</label>
+          <input type="text" id="year" required>
+        </div>
+
+        <div class="form-item">
+          <label for="category" class ="primary">Category:</label>
+          <select id="category">
+            <option value="" disable selected></option>
+            <option value="Rock">Rock</option>
+            <option value="Pop">Pop</option>
+            <option value="Reggae">Reggae</option>
+            <option value="Electronic">Electronic</option>
+            <option value="Indie">Indie</option>
+          </select>
+        </div>
+        
       </div>
+      <input type="submit" value="Add">
     </form>
   </body>
 </html>
